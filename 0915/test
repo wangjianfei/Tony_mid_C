@@ -1,0 +1,731 @@
+
+a.out:     file format elf32-i386
+a.out
+architecture: i386, flags 0x00000112:
+EXEC_P, HAS_SYMS, D_PAGED
+start address 0x08048350
+
+Program Header:
+    PHDR off    0x00000034 vaddr 0x08048034 paddr 0x08048034 align 2**2
+         filesz 0x00000100 memsz 0x00000100 flags r-x
+  INTERP off    0x00000134 vaddr 0x08048134 paddr 0x08048134 align 2**0
+         filesz 0x00000013 memsz 0x00000013 flags r--
+    LOAD off    0x00000000 vaddr 0x08048000 paddr 0x08048000 align 2**12
+         filesz 0x00000528 memsz 0x00000528 flags r-x
+    LOAD off    0x00000f0c vaddr 0x08049f0c paddr 0x08049f0c align 2**12
+         filesz 0x00000108 memsz 0x00000110 flags rw-
+ DYNAMIC off    0x00000f20 vaddr 0x08049f20 paddr 0x08049f20 align 2**2
+         filesz 0x000000d0 memsz 0x000000d0 flags rw-
+    NOTE off    0x00000148 vaddr 0x08048148 paddr 0x08048148 align 2**2
+         filesz 0x00000044 memsz 0x00000044 flags r--
+   STACK off    0x00000000 vaddr 0x00000000 paddr 0x00000000 align 2**2
+         filesz 0x00000000 memsz 0x00000000 flags rw-
+   RELRO off    0x00000f0c vaddr 0x08049f0c paddr 0x08049f0c align 2**0
+         filesz 0x000000f4 memsz 0x000000f4 flags r--
+
+Dynamic Section:
+  NEEDED               libc.so.6
+  INIT                 0x080482dc
+  FINI                 0x080484fc
+  HASH                 0x0804818c
+  GNU_HASH             0x080481b4
+  STRTAB               0x08048224
+  SYMTAB               0x080481d4
+  STRSZ                0x0000005e
+  SYMENT               0x00000010
+  DEBUG                0x00000000
+  PLTGOT               0x08049ff4
+  PLTRELSZ             0x00000018
+  PLTREL               0x00000011
+  JMPREL               0x080482c4
+  REL                  0x080482bc
+  RELSZ                0x00000008
+  RELENT               0x00000008
+  VERNEED              0x0804828c
+  VERNEEDNUM           0x00000001
+  VERSYM               0x08048282
+
+Version References:
+  required from libc.so.6:
+    0x0d696910 0x00 03 GLIBC_2.0
+    0x09691974 0x00 02 GLIBC_2.3.4
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .interp       00000013  08048134  08048134  00000134  2**0
+                  CONTENTS, ALLOC, LOAD, READONLY, DATA
+  1 .note.ABI-tag 00000020  08048148  08048148  00000148  2**2
+                  CONTENTS, ALLOC, LOAD, READONLY, DATA
+  2 .note.gnu.build-id 00000024  08048168  08048168  00000168  2**2
+                  CONTENTS, ALLOC, LOAD, READONLY, DATA
+  3 .hash         00000028  0804818c  0804818c  0000018c  2**2
+                  CONTENTS, ALLOC, LOAD, READONLY, DATA
+  4 .gnu.hash     00000020  080481b4  080481b4  000001b4  2**2
+                  CONTENTS, ALLOC, LOAD, READONLY, DATA
+  5 .dynsym       00000050  080481d4  080481d4  000001d4  2**2
+                  CONTENTS, ALLOC, LOAD, READONLY, DATA
+  6 .dynstr       0000005e  08048224  08048224  00000224  2**0
+                  CONTENTS, ALLOC, LOAD, READONLY, DATA
+  7 .gnu.version  0000000a  08048282  08048282  00000282  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, DATA
+  8 .gnu.version_r 00000030  0804828c  0804828c  0000028c  2**2
+                  CONTENTS, ALLOC, LOAD, READONLY, DATA
+  9 .rel.dyn      00000008  080482bc  080482bc  000002bc  2**2
+                  CONTENTS, ALLOC, LOAD, READONLY, DATA
+ 10 .rel.plt      00000018  080482c4  080482c4  000002c4  2**2
+                  CONTENTS, ALLOC, LOAD, READONLY, DATA
+ 11 .init         00000030  080482dc  080482dc  000002dc  2**2
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 12 .plt          00000040  0804830c  0804830c  0000030c  2**2
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 13 .text         000001ac  08048350  08048350  00000350  2**4
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 14 .fini         0000001c  080484fc  080484fc  000004fc  2**2
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 15 .rodata       0000000b  08048518  08048518  00000518  2**2
+                  CONTENTS, ALLOC, LOAD, READONLY, DATA
+ 16 .eh_frame     00000004  08048524  08048524  00000524  2**2
+                  CONTENTS, ALLOC, LOAD, READONLY, DATA
+ 17 .ctors        00000008  08049f0c  08049f0c  00000f0c  2**2
+                  CONTENTS, ALLOC, LOAD, DATA
+ 18 .dtors        00000008  08049f14  08049f14  00000f14  2**2
+                  CONTENTS, ALLOC, LOAD, DATA
+ 19 .jcr          00000004  08049f1c  08049f1c  00000f1c  2**2
+                  CONTENTS, ALLOC, LOAD, DATA
+ 20 .dynamic      000000d0  08049f20  08049f20  00000f20  2**2
+                  CONTENTS, ALLOC, LOAD, DATA
+ 21 .got          00000004  08049ff0  08049ff0  00000ff0  2**2
+                  CONTENTS, ALLOC, LOAD, DATA
+ 22 .got.plt      00000018  08049ff4  08049ff4  00000ff4  2**2
+                  CONTENTS, ALLOC, LOAD, DATA
+ 23 .data         00000008  0804a00c  0804a00c  0000100c  2**2
+                  CONTENTS, ALLOC, LOAD, DATA
+ 24 .bss          00000008  0804a014  0804a014  00001014  2**2
+                  ALLOC
+ 25 .comment      00000023  00000000  00000000  00001014  2**0
+                  CONTENTS, READONLY
+ 26 .debug_aranges 00000020  00000000  00000000  00001037  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 27 .debug_pubnames 0000001b  00000000  00000000  00001057  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 28 .debug_info   00000388  00000000  00000000  00001072  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 29 .debug_abbrev 0000012f  00000000  00000000  000013fa  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 30 .debug_line   000000c9  00000000  00000000  00001529  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 31 .debug_frame  0000002c  00000000  00000000  000015f4  2**2
+                  CONTENTS, READONLY, DEBUGGING
+ 32 .debug_str    00000223  00000000  00000000  00001620  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 33 .debug_loc    00000057  00000000  00000000  00001843  2**0
+                  CONTENTS, READONLY, DEBUGGING
+SYMBOL TABLE:
+08048134 l    d  .interp	00000000              .interp
+08048148 l    d  .note.ABI-tag	00000000              .note.ABI-tag
+08048168 l    d  .note.gnu.build-id	00000000              .note.gnu.build-id
+0804818c l    d  .hash	00000000              .hash
+080481b4 l    d  .gnu.hash	00000000              .gnu.hash
+080481d4 l    d  .dynsym	00000000              .dynsym
+08048224 l    d  .dynstr	00000000              .dynstr
+08048282 l    d  .gnu.version	00000000              .gnu.version
+0804828c l    d  .gnu.version_r	00000000              .gnu.version_r
+080482bc l    d  .rel.dyn	00000000              .rel.dyn
+080482c4 l    d  .rel.plt	00000000              .rel.plt
+080482dc l    d  .init	00000000              .init
+0804830c l    d  .plt	00000000              .plt
+08048350 l    d  .text	00000000              .text
+080484fc l    d  .fini	00000000              .fini
+08048518 l    d  .rodata	00000000              .rodata
+08048524 l    d  .eh_frame	00000000              .eh_frame
+08049f0c l    d  .ctors	00000000              .ctors
+08049f14 l    d  .dtors	00000000              .dtors
+08049f1c l    d  .jcr	00000000              .jcr
+08049f20 l    d  .dynamic	00000000              .dynamic
+08049ff0 l    d  .got	00000000              .got
+08049ff4 l    d  .got.plt	00000000              .got.plt
+0804a00c l    d  .data	00000000              .data
+0804a014 l    d  .bss	00000000              .bss
+00000000 l    d  .comment	00000000              .comment
+00000000 l    d  .debug_aranges	00000000              .debug_aranges
+00000000 l    d  .debug_pubnames	00000000              .debug_pubnames
+00000000 l    d  .debug_info	00000000              .debug_info
+00000000 l    d  .debug_abbrev	00000000              .debug_abbrev
+00000000 l    d  .debug_line	00000000              .debug_line
+00000000 l    d  .debug_frame	00000000              .debug_frame
+00000000 l    d  .debug_str	00000000              .debug_str
+00000000 l    d  .debug_loc	00000000              .debug_loc
+00000000 l    df *ABS*	00000000              crtstuff.c
+08049f0c l     O .ctors	00000000              __CTOR_LIST__
+08049f14 l     O .dtors	00000000              __DTOR_LIST__
+08049f1c l     O .jcr	00000000              __JCR_LIST__
+08048380 l     F .text	00000000              __do_global_dtors_aux
+0804a014 l     O .bss	00000001              completed.7021
+0804a018 l     O .bss	00000004              dtor_idx.7023
+080483e0 l     F .text	00000000              frame_dummy
+00000000 l    df *ABS*	00000000              crtstuff.c
+08049f10 l     O .ctors	00000000              __CTOR_END__
+08048524 l     O .eh_frame	00000000              __FRAME_END__
+08049f1c l     O .jcr	00000000              __JCR_END__
+080484d0 l     F .text	00000000              __do_global_ctors_aux
+00000000 l    df *ABS*	00000000              test1.c
+08049ff4 l     O .got.plt	00000000              .hidden _GLOBAL_OFFSET_TABLE_
+08049f0c l       .ctors	00000000              .hidden __init_array_end
+08049f0c l       .ctors	00000000              .hidden __init_array_start
+08049f20 l     O .dynamic	00000000              .hidden _DYNAMIC
+0804a00c  w      .data	00000000              data_start
+08048460 g     F .text	00000005              __libc_csu_fini
+08048350 g     F .text	00000000              _start
+00000000  w      *UND*	00000000              __gmon_start__
+00000000  w      *UND*	00000000              _Jv_RegisterClasses
+08048518 g     O .rodata	00000004              _fp_hw
+00000000       F *UND*	00000000              __printf_chk@@GLIBC_2.3.4
+080484fc g     F .fini	00000000              _fini
+00000000       F *UND*	00000000              __libc_start_main@@GLIBC_2.0
+0804851c g     O .rodata	00000004              _IO_stdin_used
+0804a00c g       .data	00000000              __data_start
+0804a010 g     O .data	00000000              .hidden __dso_handle
+08049f18 g     O .dtors	00000000              .hidden __DTOR_END__
+08048470 g     F .text	0000005a              __libc_csu_init
+0804a014 g       *ABS*	00000000              __bss_start
+0804a01c g       *ABS*	00000000              _end
+0804a014 g       *ABS*	00000000              _edata
+080484ca g     F .text	00000000              .hidden __i686.get_pc_thunk.bx
+08048404 g     F .text	0000004f              main
+080482dc g     F .init	00000000              _init
+
+
+Contents of section .interp:
+ 8048134 2f6c6962 2f6c642d 6c696e75 782e736f  /lib/ld-linux.so
+ 8048144 2e3200                               .2.             
+Contents of section .note.ABI-tag:
+ 8048148 04000000 10000000 01000000 474e5500  ............GNU.
+ 8048158 00000000 02000000 06000000 0f000000  ................
+Contents of section .note.gnu.build-id:
+ 8048168 04000000 14000000 03000000 474e5500  ............GNU.
+ 8048178 2a170f6a 3c44822b c98da569 f5389c18  *..j<D.+...i.8..
+ 8048188 10fcd2e4                             ....            
+Contents of section .hash:
+ 804818c 03000000 05000000 01000000 03000000  ................
+ 804819c 04000000 00000000 00000000 00000000  ................
+ 80481ac 00000000 02000000                    ........        
+Contents of section .gnu.hash:
+ 80481b4 02000000 04000000 01000000 05000000  ................
+ 80481c4 00200020 00000000 04000000 ad4be3c0  . . .........K..
+Contents of section .dynsym:
+ 80481d4 00000000 00000000 00000000 00000000  ................
+ 80481e4 01000000 00000000 00000000 20000000  ............ ...
+ 80481f4 29000000 00000000 00000000 12000000  )...............
+ 8048204 36000000 00000000 00000000 12000000  6...............
+ 8048214 1a000000 1c850408 04000000 11001000  ................
+Contents of section .dynstr:
+ 8048224 005f5f67 6d6f6e5f 73746172 745f5f00  .__gmon_start__.
+ 8048234 6c696263 2e736f2e 36005f49 4f5f7374  libc.so.6._IO_st
+ 8048244 64696e5f 75736564 005f5f70 72696e74  din_used.__print
+ 8048254 665f6368 6b005f5f 6c696263 5f737461  f_chk.__libc_sta
+ 8048264 72745f6d 61696e00 474c4942 435f322e  rt_main.GLIBC_2.
+ 8048274 3000474c 4942435f 322e332e 3400      0.GLIBC_2.3.4.  
+Contents of section .gnu.version:
+ 8048282 00000000 02000300 0100               ..........      
+Contents of section .gnu.version_r:
+ 804828c 01000200 10000000 10000000 00000000  ................
+ 804829c 1069690d 00000300 48000000 10000000  .ii.....H.......
+ 80482ac 74196909 00000200 52000000 00000000  t.i.....R.......
+Contents of section .rel.dyn:
+ 80482bc f09f0408 06010000                    ........        
+Contents of section .rel.plt:
+ 80482c4 00a00408 07010000 04a00408 07020000  ................
+ 80482d4 08a00408 07030000                    ........        
+Contents of section .init:
+ 80482dc 5589e553 83ec04e8 00000000 5b81c30c  U..S........[...
+ 80482ec 1d00008b 93fcffff ff85d274 05e81e00  ...........t....
+ 80482fc 0000e8dd 000000e8 c8010000 585bc9c3  ............X[..
+Contents of section .plt:
+ 804830c ff35f89f 0408ff25 fc9f0408 00000000  .5.....%........
+ 804831c ff2500a0 04086800 000000e9 e0ffffff  .%....h.........
+ 804832c ff2504a0 04086808 000000e9 d0ffffff  .%....h.........
+ 804833c ff2508a0 04086810 000000e9 c0ffffff  .%....h.........
+Contents of section .text:
+ 8048350 31ed5e89 e183e4f0 50545268 60840408  1.^.....PTRh`...
+ 8048360 68708404 08515668 04840408 e8cbffff  hp...QVh........
+ 8048370 fff49090 90909090 90909090 90909090  ................
+ 8048380 5589e553 83ec0480 3d14a004 0800753f  U..S....=.....u?
+ 8048390 a118a004 08bb189f 040881eb 149f0408  ................
+ 80483a0 c1fb0283 eb0139d8 731e8db6 00000000  ......9.s.......
+ 80483b0 83c001a3 18a00408 ff148514 9f0408a1  ................
+ 80483c0 18a00408 39d872e8 c60514a0 04080183  ....9.r.........
+ 80483d0 c4045b5d c38d7426 008dbc27 00000000  ..[]..t&...'....
+ 80483e0 5589e583 ec18a11c 9f040885 c07412b8  U............t..
+ 80483f0 00000000 85c07409 c704241c 9f0408ff  ......t...$.....
+ 8048400 d0c9c390 5589e583 e4f083ec 20c74424  ....U....... .D$
+ 8048410 1c050000 008b4424 1c85c074 2f8b4424  ......D$...t/.D$
+ 8048420 1c83e801 8944241c 8b44241c 89442408  .....D$..D$..D$.
+ 8048430 c7442404 20850408 c7042401 000000e8  .D$. .....$.....
+ 8048440 e8feffff 8b44241c 85c075d1 b8000000  .....D$...u.....
+ 8048450 00c9c390 90909090 90909090 90909090  ................
+ 8048460 5589e55d c38d7426 008dbc27 00000000  U..]..t&...'....
+ 8048470 5589e557 5653e84f 00000081 c3791b00  U..WVS.O.....y..
+ 8048480 0083ec1c e853feff ff8dbb18 ffffff8d  .....S..........
+ 8048490 8318ffff ff29c7c1 ff0285ff 742431f6  .....)......t$1.
+ 80484a0 8b451089 4424088b 450c8944 24048b45  .E..D$..E..D$..E
+ 80484b0 08890424 ff94b318 ffffff83 c60139fe  ...$..........9.
+ 80484c0 72de83c4 1c5b5e5f 5dc38b1c 24c39090  r....[^_]...$...
+ 80484d0 5589e553 83ec04a1 0c9f0408 83f8ff74  U..S...........t
+ 80484e0 13bb0c9f 04086690 83eb04ff d08b0383  ......f.........
+ 80484f0 f8ff75f4 83c4045b 5dc39090           ..u....[]...    
+Contents of section .fini:
+ 80484fc 5589e553 83ec04e8 00000000 5b81c3ec  U..S........[...
+ 804850c 1a0000e8 6cfeffff 595bc9c3           ....l...Y[..    
+Contents of section .rodata:
+ 8048518 03000000 01000200 256400             ........%d.     
+Contents of section .eh_frame:
+ 8048524 00000000                             ....            
+Contents of section .ctors:
+ 8049f0c ffffffff 00000000                    ........        
+Contents of section .dtors:
+ 8049f14 ffffffff 00000000                    ........        
+Contents of section .jcr:
+ 8049f1c 00000000                             ....            
+Contents of section .dynamic:
+ 8049f20 01000000 10000000 0c000000 dc820408  ................
+ 8049f30 0d000000 fc840408 04000000 8c810408  ................
+ 8049f40 f5feff6f b4810408 05000000 24820408  ...o........$...
+ 8049f50 06000000 d4810408 0a000000 5e000000  ............^...
+ 8049f60 0b000000 10000000 15000000 00000000  ................
+ 8049f70 03000000 f49f0408 02000000 18000000  ................
+ 8049f80 14000000 11000000 17000000 c4820408  ................
+ 8049f90 11000000 bc820408 12000000 08000000  ................
+ 8049fa0 13000000 08000000 feffff6f 8c820408  ...........o....
+ 8049fb0 ffffff6f 01000000 f0ffff6f 82820408  ...o.......o....
+ 8049fc0 00000000 00000000 00000000 00000000  ................
+ 8049fd0 00000000 00000000 00000000 00000000  ................
+ 8049fe0 00000000 00000000 00000000 00000000  ................
+Contents of section .got:
+ 8049ff0 00000000                             ....            
+Contents of section .got.plt:
+ 8049ff4 209f0408 00000000 00000000 22830408   ..........."...
+ 804a004 32830408 42830408                    2...B...        
+Contents of section .data:
+ 804a00c 00000000 00000000                    ........        
+Contents of section .comment:
+ 0000 4743433a 20285562 756e7475 20342e34  GCC: (Ubuntu 4.4
+ 0010 2e332d34 7562756e 74753529 20342e34  .3-4ubuntu5) 4.4
+ 0020 2e3300                               .3.             
+Contents of section .debug_aranges:
+ 0000 1c000000 02000000 00000400 00000000  ................
+ 0010 04840408 4f000000 00000000 00000000  ....O...........
+Contents of section .debug_pubnames:
+ 0000 17000000 02000000 00008803 00000403  ................
+ 0010 00006d61 696e0000 000000             ..main.....     
+Contents of section .debug_info:
+ 0000 84030000 02000000 00000401 fd010000  ................
+ 0010 012e0100 00640100 00048404 08538404  .....d.......S..
+ 0020 08000000 00023800 000003d3 30000000  ......8.....0...
+ 0030 030407d4 00000003 0108b700 00000302  ................
+ 0040 071b0100 00030407 cf000000 030106b9  ................
+ 0050 00000003 02052e00 00000404 05696e74  .............int
+ 0060 00030805 7d000000 030807ca 00000002  ....}...........
+ 0070 0c000000 04386100 0000029f 01000004  .....8a.........
+ 0080 8d850000 00030405 82000000 02950100  ................
+ 0090 00048e6f 00000005 04070604 0704a200  ...o............
+ 00a0 00000301 06c00000 0008ae00 00009406  ................
+ 00b0 2d690200 00094d00 00000510 015a0000  -i....M......Z..
+ 00c0 00022300 090e0100 00051501 9c000000  ..#.............
+ 00d0 02230409 70000000 0516019c 00000002  .#..p...........
+ 00e0 230809d2 01000005 17019c00 00000223  #..............#
+ 00f0 0c09f600 00000518 019c0000 00022310  ..............#.
+ 0100 093f0000 00051901 9c000000 02231409  .?...........#..
+ 0110 87010000 051a019c 00000002 23180954  ............#..T
+ 0120 00000005 1b019c00 00000223 1c090000  ...........#....
+ 0130 0000051c 019c0000 00022320 09ef0100  ..........# ....
+ 0140 00051e01 9c000000 02232409 ae010000  .........#$.....
+ 0150 051f019c 00000002 23280921 00000005  ........#(.!....
+ 0160 20019c00 00000223 2c096700 00000522   ......#,.g...."
+ 0170 01a70200 00022330 09a70100 00052401  ......#0......$.
+ 0180 ad020000 02233409 09020000 0526015a  .....#4......&.Z
+ 0190 00000002 233809c4 01000005 2a015a00  ....#8......*.Z.
+ 01a0 00000223 3c091500 0000052c 017a0000  ...#<......,.z..
+ 01b0 00022340 09920000 00053001 3e000000  ..#@......0.>...
+ 01c0 02234409 e0010000 0531014c 00000002  .#D......1.L....
+ 01d0 234609ec 00000005 3201b302 00000223  #F......2......#
+ 01e0 47096100 00000536 01c30200 00022348  G.a....6......#H
+ 01f0 09190000 00053f01 8c000000 02234c09  ......?......#L.
+ 0200 41010000 0548019a 00000002 23540948  A....H......#T.H
+ 0210 01000005 49019a00 00000223 58094f01  ....I......#X.O.
+ 0220 0000054a 019a0000 0002235c 09560100  ...J......#\.V..
+ 0230 00054b01 9a000000 02236009 5d010000  ..K......#`.]...
+ 0240 054c0125 00000002 236409cc 01000005  .L.%....#d......
+ 0250 4e015a00 00000223 68090501 00000550  N.Z....#h......P
+ 0260 01c90200 0002236c 000a1802 000005b4  ......#l........
+ 0270 08e10000 000c05ba a7020000 0b3b0100  .............;..
+ 0280 0005bba7 02000002 23000ba8 00000005  ........#.......
+ 0290 bcad0200 00022304 0b9e0000 0005c05a  ......#........Z
+ 02a0 00000002 23080007 04700200 000704a9  ....#....p......
+ 02b0 0000000c a2000000 c3020000 0d970000  ................
+ 02c0 00000007 04690200 000ca200 0000d902  .....i..........
+ 02d0 00000d97 00000027 000704df 0200000e  .......'........
+ 02e0 a2000000 0f018b00 00000267 015a0000  ...........g.Z..
+ 02f0 00030104 03000010 81010000 0267d902  .............g..
+ 0300 00001100 12013601 00000103 015a0000  ......6......Z..
+ 0310 00048404 08538404 08000000 00620300  .....S.......b..
+ 0320 0013c500 00000103 5a000000 02910013  ........Z.......
+ 0330 a3000000 01036203 00000291 04146e75  ......b.......nu
+ 0340 6d000105 68030000 2c000000 15e40200  m...h...,.......
+ 0350 002c8404 08448404 08010916 f7020000  .,...D..........
+ 0360 00000704 d9020000 175a0000 0018be01  .........Z......
+ 0370 00000691 ad020000 01011811 02000006  ................
+ 0380 92ad0200 00010100                    ........        
+Contents of section .debug_abbrev:
+ 0000 01110125 0e130b03 0e1b0e11 01120110  ...%............
+ 0010 06000002 1600030e 3a0b3b0b 49130000  ........:.;.I...
+ 0020 0324000b 0b3e0b03 0e000004 24000b0b  .$...>......$...
+ 0030 3e0b0308 00000524 000b0b3e 0b000006  >......$...>....
+ 0040 0f000b0b 0000070f 000b0b49 13000008  ...........I....
+ 0050 1301030e 0b0b3a0b 3b0b0113 0000090d  ......:.;.......
+ 0060 00030e3a 0b3b0549 13380a00 000a1600  ...:.;.I.8......
+ 0070 030e3a0b 3b0b0000 0b0d0003 0e3a0b3b  ..:.;........:.;
+ 0080 0b491338 0a00000c 01014913 01130000  .I.8......I.....
+ 0090 0d210049 132f0b00 000e2600 49130000  .!.I./....&.I...
+ 00a0 0f2e013f 0c030e3a 0b3b0b27 0c491320  ...?...:.;.'.I. 
+ 00b0 0b340c01 13000010 0500030e 3a0b3b0b  .4..........:.;.
+ 00c0 49130000 11180000 00122e01 3f0c030e  I...........?...
+ 00d0 3a0b3b0b 270c4913 11011201 40060113  :.;.'.I.....@...
+ 00e0 00001305 00030e3a 0b3b0b49 13020a00  .......:.;.I....
+ 00f0 00143400 03083a0b 3b0b4913 02060000  ..4...:.;.I.....
+ 0100 151d0131 13110112 01580b59 0b000016  ...1.....X.Y....
+ 0110 05003113 00001735 00491300 00183400  ..1....5.I....4.
+ 0120 030e3a0b 3b0b4913 3f0c3c0c 000000    ..:.;.I.?.<.... 
+Contents of section .debug_line:
+ 0000 c5000000 0200a000 00000101 fb0e0d00  ................
+ 0010 01010101 00000001 0000012f 7573722f  .........../usr/
+ 0020 696e636c 7564652f 62697473 002f7573  include/bits./us
+ 0030 722f6c69 622f6763 632f6934 38362d6c  r/lib/gcc/i486-l
+ 0040 696e7578 2d676e75 2f342e34 2e332f69  inux-gnu/4.4.3/i
+ 0050 6e636c75 6465002f 7573722f 696e636c  nclude./usr/incl
+ 0060 75646500 00746573 74312e63 00000000  ude..test1.c....
+ 0070 73746469 6f322e68 00010000 73746464  stdio2.h....stdd
+ 0080 65662e68 00020000 74797065 732e6800  ef.h....types.h.
+ 0090 0100006c 6962696f 2e680003 00007374  ...libio.h....st
+ 00a0 64696f2e 68000300 00000005 02048404  dio.h...........
+ 00b0 08159183 84ad0402 03e0004a 0401039d  ...........J....
+ 00c0 7f087488 02070001 01                 ..t......       
+Contents of section .debug_frame:
+ 0000 10000000 ffffffff 0100017c 080c0404  ...........|....
+ 0010 88010000 14000000 00000000 04840408  ................
+ 0020 4f000000 410e0842 85020d05           O...A..B....    
+Contents of section .debug_str:
+ 0000 5f494f5f 6275665f 656e6400 5f5f7175  _IO_buf_end.__qu
+ 0010 61645f74 005f6f6c 645f6f66 66736574  ad_t._old_offset
+ 0020 005f494f 5f736176 655f656e 64007368  ._IO_save_end.sh
+ 0030 6f727420 696e7400 73697a65 5f74005f  ort int.size_t._
+ 0040 494f5f77 72697465 5f707472 005f666c  IO_write_ptr._fl
+ 0050 61677300 5f494f5f 6275665f 62617365  ags._IO_buf_base
+ 0060 005f6c6f 636b005f 6d61726b 65727300  ._lock._markers.
+ 0070 5f494f5f 72656164 5f656e64 006c6f6e  _IO_read_end.lon
+ 0080 67206c6f 6e672069 6e740070 72696e74  g long int.print
+ 0090 66005f63 75725f63 6f6c756d 6e005f70  f._cur_column._p
+ 00a0 6f730061 72677600 5f736275 66005f49  os.argv._sbuf._I
+ 00b0 4f5f4649 4c450075 6e736967 6e656420  O_FILE.unsigned 
+ 00c0 63686172 00617267 63006c6f 6e67206c  char.argc.long l
+ 00d0 6f6e6720 756e7369 676e6564 20696e74  ong unsigned int
+ 00e0 005f494f 5f6d6172 6b657200 5f73686f  ._IO_marker._sho
+ 00f0 72746275 66005f49 4f5f7772 6974655f  rtbuf._IO_write_
+ 0100 62617365 005f756e 75736564 32005f49  base._unused2._I
+ 0110 4f5f7265 61645f70 74720073 686f7274  O_read_ptr.short
+ 0120 20756e73 69676e65 6420696e 74007465   unsigned int.te
+ 0130 7374312e 63006d61 696e005f 6e657874  st1.c.main._next
+ 0140 005f5f70 61643100 5f5f7061 6432005f  .__pad1.__pad2._
+ 0150 5f706164 33005f5f 70616434 005f5f70  _pad3.__pad4.__p
+ 0160 61643500 2f686f6d 652f616b 61656475  ad5./home/akaedu
+ 0170 2f546f6e 795f6d69 645f432f 30393135  /Tony_mid_C/0915
+ 0180 005f5f66 6d74005f 494f5f77 72697465  .__fmt._IO_write
+ 0190 5f656e64 005f5f6f 66663634 5f74005f  _end.__off64_t._
+ 01a0 5f6f6666 5f74005f 63686169 6e005f49  _off_t._chain._I
+ 01b0 4f5f6261 636b7570 5f626173 65007374  O_backup_base.st
+ 01c0 64696e00 5f666c61 67733200 5f6d6f64  din._flags2._mod
+ 01d0 65005f49 4f5f7265 61645f62 61736500  e._IO_read_base.
+ 01e0 5f767461 626c655f 6f666673 6574005f  _vtable_offset._
+ 01f0 494f5f73 6176655f 62617365 00474e55  IO_save_base.GNU
+ 0200 20432034 2e342e33 005f6669 6c656e6f   C 4.4.3._fileno
+ 0210 00737464 6f757400 5f494f5f 6c6f636b  .stdout._IO_lock
+ 0220 5f7400                               _t.             
+Contents of section .debug_loc:
+ 0000 00000000 01000000 02007404 01000000  ..........t.....
+ 0010 03000000 02007408 03000000 4f000000  ......t.....O...
+ 0020 02007508 00000000 00000000 11000000  ..u.............
+ 0030 20000000 0200741c 20000000 28000000   .....t. ...(...
+ 0040 01005028 0000004f 00000002 00741c00  ..P(...O.....t..
+ 0050 00000000 000000                      .......         
+
+Disassembly of section .init:
+
+080482dc <_init>:
+ 80482dc:	55                   	push   %ebp
+ 80482dd:	89 e5                	mov    %esp,%ebp
+ 80482df:	53                   	push   %ebx
+ 80482e0:	83 ec 04             	sub    $0x4,%esp
+ 80482e3:	e8 00 00 00 00       	call   80482e8 <_init+0xc>
+ 80482e8:	5b                   	pop    %ebx
+ 80482e9:	81 c3 0c 1d 00 00    	add    $0x1d0c,%ebx
+ 80482ef:	8b 93 fc ff ff ff    	mov    -0x4(%ebx),%edx
+ 80482f5:	85 d2                	test   %edx,%edx
+ 80482f7:	74 05                	je     80482fe <_init+0x22>
+ 80482f9:	e8 1e 00 00 00       	call   804831c <__gmon_start__@plt>
+ 80482fe:	e8 dd 00 00 00       	call   80483e0 <frame_dummy>
+ 8048303:	e8 c8 01 00 00       	call   80484d0 <__do_global_ctors_aux>
+ 8048308:	58                   	pop    %eax
+ 8048309:	5b                   	pop    %ebx
+ 804830a:	c9                   	leave  
+ 804830b:	c3                   	ret    
+
+Disassembly of section .plt:
+
+0804830c <__gmon_start__@plt-0x10>:
+ 804830c:	ff 35 f8 9f 04 08    	pushl  0x8049ff8
+ 8048312:	ff 25 fc 9f 04 08    	jmp    *0x8049ffc
+ 8048318:	00 00                	add    %al,(%eax)
+	...
+
+0804831c <__gmon_start__@plt>:
+ 804831c:	ff 25 00 a0 04 08    	jmp    *0x804a000
+ 8048322:	68 00 00 00 00       	push   $0x0
+ 8048327:	e9 e0 ff ff ff       	jmp    804830c <_init+0x30>
+
+0804832c <__printf_chk@plt>:
+ 804832c:	ff 25 04 a0 04 08    	jmp    *0x804a004
+ 8048332:	68 08 00 00 00       	push   $0x8
+ 8048337:	e9 d0 ff ff ff       	jmp    804830c <_init+0x30>
+
+0804833c <__libc_start_main@plt>:
+ 804833c:	ff 25 08 a0 04 08    	jmp    *0x804a008
+ 8048342:	68 10 00 00 00       	push   $0x10
+ 8048347:	e9 c0 ff ff ff       	jmp    804830c <_init+0x30>
+
+Disassembly of section .text:
+
+08048350 <_start>:
+ 8048350:	31 ed                	xor    %ebp,%ebp
+ 8048352:	5e                   	pop    %esi
+ 8048353:	89 e1                	mov    %esp,%ecx
+ 8048355:	83 e4 f0             	and    $0xfffffff0,%esp
+ 8048358:	50                   	push   %eax
+ 8048359:	54                   	push   %esp
+ 804835a:	52                   	push   %edx
+ 804835b:	68 60 84 04 08       	push   $0x8048460
+ 8048360:	68 70 84 04 08       	push   $0x8048470
+ 8048365:	51                   	push   %ecx
+ 8048366:	56                   	push   %esi
+ 8048367:	68 04 84 04 08       	push   $0x8048404
+ 804836c:	e8 cb ff ff ff       	call   804833c <__libc_start_main@plt>
+ 8048371:	f4                   	hlt    
+ 8048372:	90                   	nop
+ 8048373:	90                   	nop
+ 8048374:	90                   	nop
+ 8048375:	90                   	nop
+ 8048376:	90                   	nop
+ 8048377:	90                   	nop
+ 8048378:	90                   	nop
+ 8048379:	90                   	nop
+ 804837a:	90                   	nop
+ 804837b:	90                   	nop
+ 804837c:	90                   	nop
+ 804837d:	90                   	nop
+ 804837e:	90                   	nop
+ 804837f:	90                   	nop
+
+08048380 <__do_global_dtors_aux>:
+ 8048380:	55                   	push   %ebp
+ 8048381:	89 e5                	mov    %esp,%ebp
+ 8048383:	53                   	push   %ebx
+ 8048384:	83 ec 04             	sub    $0x4,%esp
+ 8048387:	80 3d 14 a0 04 08 00 	cmpb   $0x0,0x804a014
+ 804838e:	75 3f                	jne    80483cf <__do_global_dtors_aux+0x4f>
+ 8048390:	a1 18 a0 04 08       	mov    0x804a018,%eax
+ 8048395:	bb 18 9f 04 08       	mov    $0x8049f18,%ebx
+ 804839a:	81 eb 14 9f 04 08    	sub    $0x8049f14,%ebx
+ 80483a0:	c1 fb 02             	sar    $0x2,%ebx
+ 80483a3:	83 eb 01             	sub    $0x1,%ebx
+ 80483a6:	39 d8                	cmp    %ebx,%eax
+ 80483a8:	73 1e                	jae    80483c8 <__do_global_dtors_aux+0x48>
+ 80483aa:	8d b6 00 00 00 00    	lea    0x0(%esi),%esi
+ 80483b0:	83 c0 01             	add    $0x1,%eax
+ 80483b3:	a3 18 a0 04 08       	mov    %eax,0x804a018
+ 80483b8:	ff 14 85 14 9f 04 08 	call   *0x8049f14(,%eax,4)
+ 80483bf:	a1 18 a0 04 08       	mov    0x804a018,%eax
+ 80483c4:	39 d8                	cmp    %ebx,%eax
+ 80483c6:	72 e8                	jb     80483b0 <__do_global_dtors_aux+0x30>
+ 80483c8:	c6 05 14 a0 04 08 01 	movb   $0x1,0x804a014
+ 80483cf:	83 c4 04             	add    $0x4,%esp
+ 80483d2:	5b                   	pop    %ebx
+ 80483d3:	5d                   	pop    %ebp
+ 80483d4:	c3                   	ret    
+ 80483d5:	8d 74 26 00          	lea    0x0(%esi,%eiz,1),%esi
+ 80483d9:	8d bc 27 00 00 00 00 	lea    0x0(%edi,%eiz,1),%edi
+
+080483e0 <frame_dummy>:
+ 80483e0:	55                   	push   %ebp
+ 80483e1:	89 e5                	mov    %esp,%ebp
+ 80483e3:	83 ec 18             	sub    $0x18,%esp
+ 80483e6:	a1 1c 9f 04 08       	mov    0x8049f1c,%eax
+ 80483eb:	85 c0                	test   %eax,%eax
+ 80483ed:	74 12                	je     8048401 <frame_dummy+0x21>
+ 80483ef:	b8 00 00 00 00       	mov    $0x0,%eax
+ 80483f4:	85 c0                	test   %eax,%eax
+ 80483f6:	74 09                	je     8048401 <frame_dummy+0x21>
+ 80483f8:	c7 04 24 1c 9f 04 08 	movl   $0x8049f1c,(%esp)
+ 80483ff:	ff d0                	call   *%eax
+ 8048401:	c9                   	leave  
+ 8048402:	c3                   	ret    
+ 8048403:	90                   	nop
+
+08048404 <main>:
+#include <stdio.h>
+
+int main(int argc, const char *argv[])
+{
+ 8048404:	55                   	push   %ebp
+ 8048405:	89 e5                	mov    %esp,%ebp
+ 8048407:	83 e4 f0             	and    $0xfffffff0,%esp
+ 804840a:	83 ec 20             	sub    $0x20,%esp
+    volatile int num = 5;
+ 804840d:	c7 44 24 1c 05 00 00 	movl   $0x5,0x1c(%esp)
+ 8048414:	00 
+    while(num)
+ 8048415:	8b 44 24 1c          	mov    0x1c(%esp),%eax
+ 8048419:	85 c0                	test   %eax,%eax
+ 804841b:	74 2f                	je     804844c <main+0x48>
+    {
+        num--;
+ 804841d:	8b 44 24 1c          	mov    0x1c(%esp),%eax
+ 8048421:	83 e8 01             	sub    $0x1,%eax
+ 8048424:	89 44 24 1c          	mov    %eax,0x1c(%esp)
+        printf("%d", num);
+ 8048428:	8b 44 24 1c          	mov    0x1c(%esp),%eax
+}
+
+__extern_always_inline int
+printf (__const char *__restrict __fmt, ...)
+{
+  return __printf_chk (__USE_FORTIFY_LEVEL - 1, __fmt, __va_arg_pack ());
+ 804842c:	89 44 24 08          	mov    %eax,0x8(%esp)
+ 8048430:	c7 44 24 04 20 85 04 	movl   $0x8048520,0x4(%esp)
+ 8048437:	08 
+ 8048438:	c7 04 24 01 00 00 00 	movl   $0x1,(%esp)
+ 804843f:	e8 e8 fe ff ff       	call   804832c <__printf_chk@plt>
+#include <stdio.h>
+
+int main(int argc, const char *argv[])
+{
+    volatile int num = 5;
+    while(num)
+ 8048444:	8b 44 24 1c          	mov    0x1c(%esp),%eax
+ 8048448:	85 c0                	test   %eax,%eax
+ 804844a:	75 d1                	jne    804841d <main+0x19>
+    {
+        num--;
+        printf("%d", num);
+    }
+    return 0;
+}
+ 804844c:	b8 00 00 00 00       	mov    $0x0,%eax
+ 8048451:	c9                   	leave  
+ 8048452:	c3                   	ret    
+ 8048453:	90                   	nop
+ 8048454:	90                   	nop
+ 8048455:	90                   	nop
+ 8048456:	90                   	nop
+ 8048457:	90                   	nop
+ 8048458:	90                   	nop
+ 8048459:	90                   	nop
+ 804845a:	90                   	nop
+ 804845b:	90                   	nop
+ 804845c:	90                   	nop
+ 804845d:	90                   	nop
+ 804845e:	90                   	nop
+ 804845f:	90                   	nop
+
+08048460 <__libc_csu_fini>:
+ 8048460:	55                   	push   %ebp
+ 8048461:	89 e5                	mov    %esp,%ebp
+ 8048463:	5d                   	pop    %ebp
+ 8048464:	c3                   	ret    
+ 8048465:	8d 74 26 00          	lea    0x0(%esi,%eiz,1),%esi
+ 8048469:	8d bc 27 00 00 00 00 	lea    0x0(%edi,%eiz,1),%edi
+
+08048470 <__libc_csu_init>:
+ 8048470:	55                   	push   %ebp
+ 8048471:	89 e5                	mov    %esp,%ebp
+ 8048473:	57                   	push   %edi
+ 8048474:	56                   	push   %esi
+ 8048475:	53                   	push   %ebx
+ 8048476:	e8 4f 00 00 00       	call   80484ca <__i686.get_pc_thunk.bx>
+ 804847b:	81 c3 79 1b 00 00    	add    $0x1b79,%ebx
+ 8048481:	83 ec 1c             	sub    $0x1c,%esp
+ 8048484:	e8 53 fe ff ff       	call   80482dc <_init>
+ 8048489:	8d bb 18 ff ff ff    	lea    -0xe8(%ebx),%edi
+ 804848f:	8d 83 18 ff ff ff    	lea    -0xe8(%ebx),%eax
+ 8048495:	29 c7                	sub    %eax,%edi
+ 8048497:	c1 ff 02             	sar    $0x2,%edi
+ 804849a:	85 ff                	test   %edi,%edi
+ 804849c:	74 24                	je     80484c2 <__libc_csu_init+0x52>
+ 804849e:	31 f6                	xor    %esi,%esi
+ 80484a0:	8b 45 10             	mov    0x10(%ebp),%eax
+ 80484a3:	89 44 24 08          	mov    %eax,0x8(%esp)
+ 80484a7:	8b 45 0c             	mov    0xc(%ebp),%eax
+ 80484aa:	89 44 24 04          	mov    %eax,0x4(%esp)
+ 80484ae:	8b 45 08             	mov    0x8(%ebp),%eax
+ 80484b1:	89 04 24             	mov    %eax,(%esp)
+ 80484b4:	ff 94 b3 18 ff ff ff 	call   *-0xe8(%ebx,%esi,4)
+ 80484bb:	83 c6 01             	add    $0x1,%esi
+ 80484be:	39 fe                	cmp    %edi,%esi
+ 80484c0:	72 de                	jb     80484a0 <__libc_csu_init+0x30>
+ 80484c2:	83 c4 1c             	add    $0x1c,%esp
+ 80484c5:	5b                   	pop    %ebx
+ 80484c6:	5e                   	pop    %esi
+ 80484c7:	5f                   	pop    %edi
+ 80484c8:	5d                   	pop    %ebp
+ 80484c9:	c3                   	ret    
+
+080484ca <__i686.get_pc_thunk.bx>:
+ 80484ca:	8b 1c 24             	mov    (%esp),%ebx
+ 80484cd:	c3                   	ret    
+ 80484ce:	90                   	nop
+ 80484cf:	90                   	nop
+
+080484d0 <__do_global_ctors_aux>:
+ 80484d0:	55                   	push   %ebp
+ 80484d1:	89 e5                	mov    %esp,%ebp
+ 80484d3:	53                   	push   %ebx
+ 80484d4:	83 ec 04             	sub    $0x4,%esp
+ 80484d7:	a1 0c 9f 04 08       	mov    0x8049f0c,%eax
+ 80484dc:	83 f8 ff             	cmp    $0xffffffff,%eax
+ 80484df:	74 13                	je     80484f4 <__do_global_ctors_aux+0x24>
+ 80484e1:	bb 0c 9f 04 08       	mov    $0x8049f0c,%ebx
+ 80484e6:	66 90                	xchg   %ax,%ax
+ 80484e8:	83 eb 04             	sub    $0x4,%ebx
+ 80484eb:	ff d0                	call   *%eax
+ 80484ed:	8b 03                	mov    (%ebx),%eax
+ 80484ef:	83 f8 ff             	cmp    $0xffffffff,%eax
+ 80484f2:	75 f4                	jne    80484e8 <__do_global_ctors_aux+0x18>
+ 80484f4:	83 c4 04             	add    $0x4,%esp
+ 80484f7:	5b                   	pop    %ebx
+ 80484f8:	5d                   	pop    %ebp
+ 80484f9:	c3                   	ret    
+ 80484fa:	90                   	nop
+ 80484fb:	90                   	nop
+
+Disassembly of section .fini:
+
+080484fc <_fini>:
+ 80484fc:	55                   	push   %ebp
+ 80484fd:	89 e5                	mov    %esp,%ebp
+ 80484ff:	53                   	push   %ebx
+ 8048500:	83 ec 04             	sub    $0x4,%esp
+ 8048503:	e8 00 00 00 00       	call   8048508 <_fini+0xc>
+ 8048508:	5b                   	pop    %ebx
+ 8048509:	81 c3 ec 1a 00 00    	add    $0x1aec,%ebx
+ 804850f:	e8 6c fe ff ff       	call   8048380 <__do_global_dtors_aux>
+ 8048514:	59                   	pop    %ecx
+ 8048515:	5b                   	pop    %ebx
+ 8048516:	c9                   	leave  
+ 8048517:	c3                   	ret    
