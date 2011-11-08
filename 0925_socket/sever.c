@@ -5,7 +5,7 @@
 #include <strings.h>
 #include <netinet/in.h>
 
-#define SOCK_PORT 9090
+#define SOCK_PORT 4869
 
 
 int main(int argc, const char *argv[])

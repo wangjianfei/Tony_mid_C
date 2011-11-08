@@ -5,7 +5,7 @@
 #include <sys/socket.h>
 #include <strings.h>
 
-#define  SOCK_PORT 9090
+#define  SOCK_PORT 4869 
 
 int main(int argc, const char *argv[])
 {
@@ -17,14 +17,14 @@ int main(int argc, const char *argv[])
     /*传参不正确 内存不够*/
     bzero(&clen_addr, sizeof(clen_addr));
     clen_addr.sin_family = AF_INET;
-    inet_pton(AF_INET, "192.168.1.23", &clen_addr.sin_addr);
+    inet_pton(AF_INET, "127.0.0.1", &clen_addr.sin_addr);
     clen_addr.sin_port = htons(SOCK_PORT);
 
     len = sizeof(clen_addr);
 
     connect(clenfd,(struct sockaddr *)&clen_addr,len);
     int i = 10;
-    while(i--)
+    while(1)
     {
     write(clenfd,buf,sizeof(buf));
     sleep(1);
